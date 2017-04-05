@@ -1,0 +1,48 @@
+#!/bin/bash
+# Author:Jocelyn GENNESSEAUX (Absolute Codes Design)
+
+# ################################################################
+#
+#   A simple bash script to automatically generate change log
+#
+# ################################################################
+
+
+# git for-each-ref --sort=taggerdate --format="%(tag) %(taggerdate:raw)" refs/tags	    : List all tags sorted by tagger date
+# sed "/^$/d"                                                                           : Remove empty line (happens when tag is associated to a commit)
+# sed '1i HEAD'                                                                         : Add the tag HEAD at the begining of the list
+# sed '$a\ '                                                                            : Add an empty line at the end
+git for-each-ref --sort=taggerdate --format="%(tag)" refs/tags | sed "/^$/d" | sed '1i HEAD' | sed '$a\ '| while read TAG
+do
+
+    # The previous TAG is needed
+    if [[ $PREV_TAG ]]; then
+
+        # Get a formated date of the tag
+        TAG_DATE=$(git log -1 --format=%at $PREV_TAG | awk '{ t=strftime("%Y-%m-%d %H:%M",$1); printf "%s", t }')
+
+        # Add an empty line
+        echo
+        
+        # Title
+        if [[ ${PREV_TAG} == "HEAD" ]]; then
+            echo "[Current]"
+        else
+            echo ${PREV_TAG}" ("${TAG_DATE}")"
+        fi
+        echo ==
+
+
+        # Logs
+        if [[ ${TAG} != "" ]]; then
+            GIT_PAGER=cat git log --no-merges --format=" * %s" $PREV_TAG...$TAG
+        else
+            GIT_PAGER=cat git log --no-merges --format=" * %s" $PREV_TAG
+        fi
+
+    fi
+
+    # Update the PREV_TAG value
+    PREV_TAG=${TAG}
+
+done
