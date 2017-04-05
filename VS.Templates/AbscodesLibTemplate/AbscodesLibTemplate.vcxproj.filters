@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{10000000-0000-0000-0000-000000000000}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{30000000-0000-0000-0000-000000000000}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include\AbscodesLibTemplate">
+      <UniqueIdentifier>{20000000-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AbscodesLibTemplate">
+      <UniqueIdentifier>{40000000-0000-0000-0000-000000000000}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AbscodesLibTemplate\MyClass.h">
+      <Filter>include\AbscodesLibTemplate</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AbscodesLibTemplate\AbscodesLibTemplate.h">
+      <Filter>include\AbscodesLibTemplate</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Readme.md" />
+    <None Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Licence.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AbscodesLibTemplate\MyClass.cpp">
+      <Filter>src\AbscodesLibTemplate</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
