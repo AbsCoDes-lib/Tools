@@ -1,2 +1,3 @@
 
-This is a simple repository to keep track of the tools I use in my developements.
+
+This repository is used to keep track of differents tools used in Absolute Code Designs developments.
