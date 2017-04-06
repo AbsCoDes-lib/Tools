@@ -1,17 +1,17 @@
 #!/bin/sh
 
-# Run multiple post-commit script
+# Run multiple pre-commit script
 # +---------------------------------------------+
 # Author:Jocelyn GENNESSEAUX (Absolute Codes Design)
 
 
 # Define here the list of pre-commit hook to Run
-HOOKS="changelog"
+HOOKS="doxygen"
 
 # Run hooks
 for hook in $HOOKS
 do
-    sh ".git/hooks/post-commit.d/$hook"
+    sh ".git/hooks/pre-commit.d/$hook"
     if [ $? -ne 0 ]; then
         exit 1
     fi

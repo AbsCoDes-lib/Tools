@@ -1,12 +1,8 @@
 #!/bin/bash
+
+# A simple bash script to automatically generate change log
+# +-------------------------------------------------------+
 # Author:Jocelyn GENNESSEAUX (Absolute Codes Design)
-
-# ################################################################
-#
-#   A simple bash script to automatically generate change log
-#
-# ################################################################
-
 
 # git for-each-ref --sort=taggerdate --format="%(tag) %(taggerdate:raw)" refs/tags	    : List all tags sorted by tagger date
 # sed "/^$/d"                                                                           : Remove empty line (happens when tag is associated to a commit)

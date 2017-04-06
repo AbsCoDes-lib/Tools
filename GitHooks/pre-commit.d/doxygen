@@ -1,0 +1,34 @@
+#!/bin/sh
+
+# Simple script to generate Doxygen documentation
+# +---------------------------------------------+
+# Author:Jocelyn GENNESSEAUX (Absolute Codes Design)
+
+
+# Docs folder
+DOCS=docs
+
+# Doxyfile
+DOXYFILE=Doxyfile
+
+
+# Remove docs folder from git history
+if [ -d "$DOCS" ]; then
+    echo "Removing docs folder ..."
+    git filter-branch --tree-filter 'rm -rf $DOCS' --prune-empty HEAD
+    git for-each-ref --format="%(refname)" refs/original/ | xargs -n 1 git update-ref -d
+    git gc
+fi
+
+
+# Generate documentation
+if [ -f "$DOXYFILE" ]; then
+    echo "Generating Documentation ..."
+    (cat "$DOXYFILE" ; echo OUTPUT_DIRECTORY="$DOCS") | doxygen -
+    # Add documentation to the actual commit
+    git add $DOCS
+    git add -u $DOCS
+fi
+
+# Exit
+exit 0
