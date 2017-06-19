@@ -6,4 +6,4 @@ When to use it :
 - Lib project : Abscodes.LIB.props
 - Dll project : Abscodes.DLL.props
 - Exe project : Abscodes.EXE.props
-- Test project : Abscodes.EXE.props
+- Test project : Abscodes.TEST.props
