@@ -75,23 +75,29 @@
 // Automatically link AbscodesLibTemplate library.
 //
 #if defined(_MSC_VER)
-    #if defined(ABSCODES_LIB_TEMPLATE_DLL)
+	#if defined _WIN64 
+		#define X64_SUFFIX "_x64"
+	#else
+		#define X64_SUFFIX ""
+	#endif
+
+	#if defined(ABSCODES_LIB_TEMPLATE_DLL)
         #if defined(_DEBUG)
-            #define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX "_d"
+            #define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX X64_SUFFIX"_d"
         #else
-            #define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX ""
+            #define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX X64_SUFFIX ""
         #endif
     #elif defined(_DLL)
         #if defined(_DEBUG)
-            #define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX "_mdd"
+            #define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX X64_SUFFIX "_mdd"
         #else
-            #define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX "_md"
+            #define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX X64_SUFFIX "_md"
         #endif
     #else
         #if defined(_DEBUG)
-            #define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX "_mtd"
+            #define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX X64_SUFFIX "_mtd"
         #else
-            #define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX "_mt"
+            #define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX X64_SUFFIX "_mt"
         #endif
     #endif
 
