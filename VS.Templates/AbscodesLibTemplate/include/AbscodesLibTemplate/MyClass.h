@@ -27,6 +27,9 @@ class AbscodesLibTemplate_API MyClass
 public:
     MyClass();
     virtual ~MyClass();
+
+public:
+	bool getTrue();
 };
 
 } // namespace AbscodesLibTemplate
