@@ -11,7 +11,7 @@
     <TargetName>$(ProductName)</TargetName>
     <IntDir>$(ObjDir)</IntDir>
     <OutDir>$(BinDir)</OutDir>
-    <_PropertySheetDisplayName>Abscodes</_PropertySheetDisplayName>
+    <_PropertySheetDisplayName>Abscodes.TEST</_PropertySheetDisplayName>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
