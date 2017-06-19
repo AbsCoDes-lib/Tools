@@ -32,6 +32,13 @@
 #endif
 
 
+// Ensure that we build with the multithreaded 
+// versions of the runtime libraries
+#if defined(_MSC_VER) && !defined(_MT)
+	#error Must compile with /MD, /MDd, /MT or /MTd
+#endif
+
+
 //
 // Ensure that ABSCODES_LIB_TEMPLATE_DLL is default unless ABSCODES_LIB_TEMPLATE_STATIC is defined
 //
@@ -101,21 +108,10 @@
 #endif
 
 
-//
-// Last Windows platform
-// 
+// Si vous incluez SDKDDKVer.h, cela définit la dernière plateforme Windows disponible.
+// Si vous souhaitez générer votre application pour une plateforme Windows précédente, incluez WinSDKVer.h et
+// définissez la macro _WIN32_WINNT à la plateforme que vous souhaitez prendre en charge avant d'inclure SDKDDKVer.h.
 #include <SDKDDKVer.h>
-
-
-//
-// Pull in basic definitions
-//
-// Stl
-#include <vector>
-#include <string>
-
-
-
 
 
 
