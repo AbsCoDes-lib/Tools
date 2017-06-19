@@ -1,2 +1,4 @@
 .idea
 *.iml
+/VS.Templates/bin
+/VS.Templates/lib
