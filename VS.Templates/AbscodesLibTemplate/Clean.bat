@@ -25,7 +25,7 @@ del /s /f /q *.xdc
 echo + Suppressions des répertoires bin, lib et obj
 echo +-------------------------------------------------------+
 
-for /d /r . %%d in (bin lib obj ipch TestResults) do @if exist "%%d" echo "%%d" && rd /s/q "%%d"
+for /d /r . %%d in (bin lib obj ipch TestResults .vs) do @if exist "%%d" echo "%%d" && rd /s/q "%%d"
 
 :: Fin
 exit /b
