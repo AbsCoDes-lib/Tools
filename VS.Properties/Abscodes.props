@@ -3,9 +3,9 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <ProductName>$(ProjectName)</ProductName>
-    <BinDir>bin\</BinDir>
-    <LibDir>lib\</LibDir>
-    <ObjDir>$(BinDir)obj\$(Platform)\$(Configuration)\</ObjDir>
+    <BinDir>$(ProjectDir)\..\bin\</BinDir>
+    <LibDir>$(ProjectDir)\..\lib\</LibDir>
+    <ObjDir>$(ProjectDir)\obj\$(Platform)\$(Configuration)\</ObjDir>
   </PropertyGroup>
   <PropertyGroup>
     <TargetName>$(ProductName)</TargetName>
@@ -16,6 +16,7 @@
   <ItemDefinitionGroup>
     <Link>
       <ImportLibrary>$(LibDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(LibDir)</AdditionalLibraryDirectories>
     </Link>
     <ClCompile>
       <AdditionalIncludeDirectories>.\include</AdditionalIncludeDirectories>
