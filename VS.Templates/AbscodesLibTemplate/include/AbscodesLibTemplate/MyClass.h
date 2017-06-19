@@ -30,6 +30,7 @@ public:
 
 public:
 	bool getTrue();
+	bool getFalse();
 };
 
 } // namespace AbscodesLibTemplate

@@ -30,5 +30,10 @@ bool MyClass::getTrue()
 	return true;
 }
 
+bool MyClass::getFalse()
+{
+	return true;
+}
+
 } // namespace AbscodesLibTemplate
 } // namespace AbsCoDes
