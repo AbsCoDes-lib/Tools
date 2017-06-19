@@ -3,18 +3,20 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <ProductName>$(ProjectName)</ProductName>
-    <BinDir>bin\</BinDir>
-    <LibDir>lib\</LibDir>
-    <ObjDir>obj\$(Platform)\$(Configuration)\</ObjDir>
+    <BinDir>$(ProjectDir)\..\bin\</BinDir>
+    <LibDir>$(ProjectDir)\..\lib\</LibDir>
+    <ObjDir>$(ProjectDir)\obj\$(Platform)\$(Configuration)\</ObjDir>
   </PropertyGroup>
   <PropertyGroup>
-    <IntDir>$(ObjDir)\</IntDir>
-    <TargetName>$(ProjductName)</TargetName>
+    <TargetName>$(ProductName)</TargetName>
+    <IntDir>$(ObjDir)</IntDir>
+    <OutDir>$(BinDir)</OutDir>
     <_PropertySheetDisplayName>Abscodes</_PropertySheetDisplayName>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
       <ImportLibrary>$(LibDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(LibDir)</AdditionalLibraryDirectories>
     </Link>
     <ClCompile>
       <AdditionalIncludeDirectories>.\include</AdditionalIncludeDirectories>
