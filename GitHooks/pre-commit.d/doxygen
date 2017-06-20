@@ -9,7 +9,7 @@
 DOCS=docs
 
 # Doxyfile
-DOXYFILE=Doxyfile
+DOXYFILE=$DOCS/Doxyfile
 
 
 # Remove docs folder from git history
