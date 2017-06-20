@@ -2,7 +2,7 @@
 //
 // This source file is part of the Absolute Codes Design open source projects
 //
-// Copyright (c) 2016 Absolute Codes Design and the project authors
+// Copyright (c) 2016-2017 Absolute Codes Design and the project authors
 // Licensed under Apache License v2.0 with Runtime Library Exception
 //
 // See https://raw.githubusercontent.com/AbsCoDes/AbsCoDes.github.io/master/Licence.txt for license information
@@ -19,6 +19,11 @@ namespace AbscodesLibTemplate {
 
 MyClass::MyClass()
 {
+	// This kind of comment (//) will
+	// not be visible in doxygen docs
+
+	// so you can freely use it to comment
+	// your code inside your functions
 }
 
 MyClass::~MyClass()
@@ -27,12 +32,17 @@ MyClass::~MyClass()
 
 bool MyClass::getTrue()
 {
-	return true;
+	return getBoolean(true);
 }
 
 bool MyClass::getFalse()
 {
-	return true;
+	return getBoolean(false);
+}
+
+bool MyClass::getBoolean(bool boolean)
+{
+	return boolean;
 }
 
 } // namespace AbscodesLibTemplate
