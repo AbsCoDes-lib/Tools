@@ -3,9 +3,9 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <ProductName>$(ProjectName)</ProductName>
-    <BinDir>$(ProjectDir)\..\bin\</BinDir>
-    <LibDir>$(ProjectDir)\..\lib\</LibDir>
-    <ObjDir>$(ProjectDir)\obj\$(Platform)\$(Configuration)\</ObjDir>
+    <BinDir>$(ProjectDir)..\bin\</BinDir>
+    <LibDir>$(ProjectDir)..\lib\</LibDir>
+    <ObjDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</ObjDir>
   </PropertyGroup>
   <PropertyGroup>
     <TargetName>$(ProductName)</TargetName>
@@ -23,6 +23,7 @@
       <WarningLevel>Level3</WarningLevel>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
