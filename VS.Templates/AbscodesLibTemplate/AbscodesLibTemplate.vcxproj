@@ -185,7 +185,6 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ABSCODES_LIB_TEMPLATE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -199,7 +198,6 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ABSCODES_LIB_TEMPLATE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -213,7 +211,6 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ABSCODES_LIB_TEMPLATE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -228,7 +225,6 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ABSCODES_LIB_TEMPLATE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -245,7 +241,6 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ABSCODES_LIB_TEMPLATE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -263,7 +258,6 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ABSCODES_LIB_TEMPLATE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -281,7 +275,6 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;ABSCODES_LIB_TEMPLATE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -300,7 +293,6 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;ABSCODES_LIB_TEMPLATE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
