@@ -14,7 +14,7 @@
 #define MyClass_INCLUDED
 
 
-#include "AbscodesLibTemplate\AbscodesLibTemplate.h"
+#include "AbscodesLibTemplate\AbscodesLibTemplateApi.h"
 
 
 namespace AbsCoDes {
@@ -35,7 +35,7 @@ public:
 	/// Constructor.
     MyClass();
 	/// Destructor.
-    virtual ~MyClass();
+    ~MyClass();
 
 public:
 	/// Always return true.
