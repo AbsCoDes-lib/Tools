@@ -1,4 +1,4 @@
-//===--- AbscodesLibTemplate.h ----------------------------------------------------------------------------------*- C++ -*-===//     
+//===--- AbscodesLibTemplateApi.h ----------------------------------------------------------------------*- C++ -*-===//
 //
 // This source file is part of the Absolute Codes Design open source projects
 //

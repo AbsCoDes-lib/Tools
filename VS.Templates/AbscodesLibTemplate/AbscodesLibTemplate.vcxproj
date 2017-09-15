@@ -35,7 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\AbscodesLibTemplate\AbscodesLibTemplate.h" />
+    <ClInclude Include="include\AbscodesLibTemplate\AbscodesLibTemplateApi.h" />
     <ClInclude Include="include\AbscodesLibTemplate\MyClass.h" />
   </ItemGroup>
   <ItemGroup>
