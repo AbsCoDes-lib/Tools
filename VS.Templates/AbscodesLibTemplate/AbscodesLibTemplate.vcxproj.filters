@@ -23,6 +23,9 @@
     <ClInclude Include="include\AbscodesLibTemplate\AbscodesLibTemplateApi.h">
       <Filter>include\AbscodesLibTemplate</Filter>
     </ClInclude>
+    <ClInclude Include="include\AbscodesLibTemplate\AbscodesLibTemplate.h">
+      <Filter>include\AbscodesLibTemplate</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.md" />

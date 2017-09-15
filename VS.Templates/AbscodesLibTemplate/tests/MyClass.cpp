@@ -11,12 +11,19 @@ namespace AbscodesLibTemplateTests
 	TEST_CLASS(MyClass_Tests)
 	{
 	public:
-		
+
 		TEST_METHOD(getTrue)
 		{
 			MyClass myClass;
 
 			Assert::IsTrue(myClass.getTrue());
+		}
+
+		TEST_METHOD(getFalse)
+		{
+			MyClass myClass;
+
+			Assert::IsFalse(myClass.getFalse());
 		}
 
 	};

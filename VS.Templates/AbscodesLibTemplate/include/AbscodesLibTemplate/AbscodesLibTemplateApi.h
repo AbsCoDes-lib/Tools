@@ -10,8 +10,8 @@
 //===-------------------------------------------------------------------------------------------------------------===//
 
 
-#ifndef AbscodesLibTemplate_INCLUDED
-#define AbscodesLibTemplate_INCLUDED
+#ifndef AbscodesLibTemplateApi_INCLUDED
+#define AbscodesLibTemplateApi_INCLUDED
 
 #if _MSC_VER > 1000
 #pragma once
@@ -121,4 +121,4 @@
 
 
 
-#endif // AbscodesLibTemplate_INCLUDED
+#endif // AbscodesLibTemplateApi_INCLUDED
