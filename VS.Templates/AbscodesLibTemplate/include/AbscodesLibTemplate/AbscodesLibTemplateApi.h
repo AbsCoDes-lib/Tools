@@ -2,7 +2,7 @@
 //
 // This source file is part of the Absolute Codes Design open source projects
 //
-// Copyright (c) 2016-2017 Absolute Codes Design and the project authors
+// Copyright (c) 2016-2019 Absolute Codes Design and the project authors
 // Licensed under Apache License v2.0 with Runtime Library Exception
 //
 // See https://raw.githubusercontent.com/AbsCoDes/AbsCoDes.github.io/master/Licence.txt for license information
@@ -114,9 +114,9 @@
 #endif
 
 
-// Si vous incluez SDKDDKVer.h, cela définit la dernière plateforme Windows disponible.
-// Si vous souhaitez générer votre application pour une plateforme Windows précédente, incluez WinSDKVer.h et
-// définissez la macro _WIN32_WINNT à la plateforme que vous souhaitez prendre en charge avant d'inclure SDKDDKVer.h.
+// Si vous incluez SDKDDKVer.h, cela dï¿½finit la derniï¿½re plateforme Windows disponible.
+// Si vous souhaitez gï¿½nï¿½rer votre application pour une plateforme Windows prï¿½cï¿½dente, incluez WinSDKVer.h et
+// dï¿½finissez la macro _WIN32_WINNT ï¿½ la plateforme que vous souhaitez prendre en charge avant d'inclure SDKDDKVer.h.
 #include <SDKDDKVer.h>
 
 
