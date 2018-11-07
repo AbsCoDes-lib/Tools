@@ -1,4 +1,4 @@
-//===--- MyClass.cpp ---------------------------------------------------------------------------------*- C++ -*-===//     
+//===--- MyClass.cpp ---------------------------------------------------------------------------------*- C++ -*-===//
 //
 // This source file is part of the Absolute Codes Design open source projects
 //
@@ -16,34 +16,27 @@
 namespace AbsCoDes {
 namespace AbscodesLibTemplate {
 
+  MyClass::MyClass() {
+    // This kind of comment (//) will
+    // not be visible in doxygen docs
 
-MyClass::MyClass()
-{
-	// This kind of comment (//) will
-	// not be visible in doxygen docs
+    // so you can freely use it to comment
+    // your code inside your functions
+  }
 
-	// so you can freely use it to comment
-	// your code inside your functions
-}
+  MyClass::~MyClass() {}
 
-MyClass::~MyClass()
-{
-}
+  bool MyClass::getTrue() {
+    return getBoolean(true);
+  }
 
-bool MyClass::getTrue()
-{
-	return getBoolean(true);
-}
+  bool MyClass::getFalse() {
+    return getBoolean(false);
+  }
 
-bool MyClass::getFalse()
-{
-	return getBoolean(false);
-}
-
-bool MyClass::getBoolean(bool boolean)
-{
-	return boolean;
-}
+  bool MyClass::getBoolean(bool boolean) {
+    return boolean;
+  }
 
 } // namespace AbscodesLibTemplate
 } // namespace AbsCoDes

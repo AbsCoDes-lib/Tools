@@ -9,56 +9,51 @@
 //
 //===-------------------------------------------------------------------------------------------------------------===//
 
-
 #ifndef MyClass_INCLUDED
 #define MyClass_INCLUDED
 
-
 #include "AbscodesLibTemplate\AbscodesLibTemplateApi.h"
-
 
 namespace AbsCoDes {
 namespace AbscodesLibTemplate {
 
+  ///
+  /// Put the class description here
+  ///
+  /// Use three / if you are using doxygen
+  ///
+  /// For more info on doxygen commands, see :
+  ///    http://doxygen.nl/docblocks.html
+  ///
+  class AbscodesLibTemplate_API MyClass {
 
-/// 
-/// Put the class description here
-/// 
-/// Use three / if you are using doxygen
-/// 
-/// For more info on doxygen commands, see :
-///    http://doxygen.nl/docblocks.html
-/// 
-class AbscodesLibTemplate_API MyClass
-{
-public:
-	/// Constructor.
+   public:
+    /// Constructor.
     MyClass();
-	/// Destructor.
+
+    /// Destructor.
     ~MyClass();
 
-public:
-	/// Always return true.
-	bool getTrue();
+   public:
+    /// Always return true.
+    bool getTrue();
 
-	/// @brief	Always return false.
-	///
-	/// @see getBoolean()
-	///
-	/// @return	false always
-	bool getFalse();
+    /// @brief	Always return false.
+    ///
+    /// @see getBoolean()
+    ///
+    /// @return	false always
+    bool getFalse();
 
-	/// @brief	Return the boolean value.
-	///
-	/// @param boolean The boolean value which will be returned
-	///
-	/// @return	true or false depending on the parameter
-	bool getBoolean(bool boolean);
-};
+    /// @brief	Return the boolean value.
+    ///
+    /// @param boolean The boolean value which will be returned
+    ///
+    /// @return	true or false depending on the parameter
+    bool getBoolean(bool boolean);
+  };
 
 } // namespace AbscodesLibTemplate
 } // namespace AbsCoDes
 
-
 #endif // MyClass_INCLUDED
-

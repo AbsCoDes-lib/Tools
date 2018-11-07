@@ -20,22 +20,20 @@
 namespace AbsCoDes {
 namespace AbscodesLibTemplate {
 
+  ///
+  /// Main class
+  ///
+  class AbscodesLibTemplate_API AbscodesLibTemplate {
 
-/// 
-/// Main class
-/// 
-class AbscodesLibTemplate_API AbscodesLibTemplate
-{
-public:
-	/// Constructor.
+   public:
+    /// Constructor.
     AbscodesLibTemplate();
-	/// Destructor.
+    /// Destructor.
     ~AbscodesLibTemplate();
-};
+  };
 
 } // namespace AbscodesLibTemplate
 } // namespace AbsCoDes
 
 
 #endif // AbscodesLibTemplate_INCLUDED
-
