@@ -74,9 +74,9 @@ ForEachMacros:
   - foreach
   - Q_FOREACH
   - BOOST_FOREACH
-IncludeBlocks: Regroup
+IncludeBlocks: Preserve
 IncludeCategories:
-  - Regex:           'stdafx.h'
+  - Regex:           'stdafx.h|.*api.h'
     Priority:        1
   - Regex:           '^<.*[^\.h]>'
     Priority:        2
