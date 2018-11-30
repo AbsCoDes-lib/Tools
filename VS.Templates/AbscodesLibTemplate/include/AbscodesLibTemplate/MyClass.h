@@ -9,12 +9,12 @@
 //
 //===-------------------------------------------------------------------------------------------------------------===//
 
-#ifndef MyClass_INCLUDED
-#define MyClass_INCLUDED
+#ifndef MYCLASS_INCLUDED
+#define MYCLASS_INCLUDED
 
 #include "AbscodesLibTemplate\AbscodesLibTemplateApi.h"
 
-namespace AbsCoDes {
+namespace abscodes {
 namespace AbscodesLibTemplate {
 
   ///
@@ -25,7 +25,7 @@ namespace AbscodesLibTemplate {
   /// For more info on doxygen commands, see :
   ///    http://doxygen.nl/docblocks.html
   ///
-  class AbscodesLibTemplate_API MyClass {
+  class ABSCODES_LIB_PREPROCESSOR_API MyClass {
 
    public:
     /// Constructor.
@@ -54,6 +54,6 @@ namespace AbscodesLibTemplate {
   };
 
 } // namespace AbscodesLibTemplate
-} // namespace AbsCoDes
+} // namespace abscodes
 
-#endif // MyClass_INCLUDED
+#endif // MYCLASS_INCLUDED

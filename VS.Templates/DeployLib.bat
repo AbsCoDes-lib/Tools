@@ -3,15 +3,16 @@ setlocal enableextensions
 setlocal enabledelayedexpansion
 
 :: Ask user info about the project to create
-:: Ex : MyProject and MY_PROJECT
-set /p Project=What's your Project name :
-set /p ProjectPreprocessor=Give a Preprocessor name :
+set /p Project=What's your Project name : 
 
 :: Define local variables
 set Template=AbscodesLibTemplate
-set TemplatePreprocessor=ABSCODES_LIB_TEMPLATE
+set TemplatePreprocessor=ABSCODES_LIB_PREPROCESSOR
 set "TemplateDir=%~dp0%Template%"
 set "ProjectDir=%~dp0%Project%"
+for /f %%i in ('MakeLower "%Project%"') do set ProjectLower=%%i
+for /f %%i in ('MakeUpper "%Project%"') do set ProjectPreprocessor=%%i
+
 
 :: First make a copy of AbscodesTemplateLib folder
 :: -----------------------------------------------
@@ -19,8 +20,8 @@ xcopy "%TemplateDir%\*.*" "%ProjectDir%\" /h/e/k/f/c
 
 :: Rename folders
 :: --------------
-rename "%ProjectDir%\include\%Template%" "%Project%" 
-rename "%ProjectDir%\src\%Template%" "%Project%" 
+rename "%ProjectDir%\include\%Template%" "%ProjectLower%" 
+rename "%ProjectDir%\src\%Template%" "%ProjectLower%" 
 
 :: Rename files
 :: ------------
@@ -32,6 +33,10 @@ for /r "%ProjectDir%" %%F in ("%Template%*.*") do (
 :: Find and replace into files
 :: ---------------------------
 ::http://fart-it.sourceforge.net/
+call FART -r "%ProjectDir%\*" "namespace %Template%" "namespace %ProjectLower%"
+call FART -r "%ProjectDir%\*" "namespace abscodes::%Template%" "namespace abscodes::%ProjectLower%"
+call FART -r "%ProjectDir%\*" "include\%Template%" "include\%ProjectLower%"
+call FART -r "%ProjectDir%\*" "src\%Template%" "src\%ProjectLower%"
 call FART -r "%ProjectDir%\*" %Template% %Project%
 call FART -r "%ProjectDir%\*" %TemplatePreprocessor% %ProjectPreprocessor%
 

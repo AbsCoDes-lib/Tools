@@ -13,7 +13,7 @@
 #include "AbscodesLibTemplate\MyClass.h"
 
 
-namespace AbsCoDes {
+namespace abscodes {
 namespace AbscodesLibTemplate {
 
   MyClass::MyClass() {
@@ -39,4 +39,4 @@ namespace AbscodesLibTemplate {
   }
 
 } // namespace AbscodesLibTemplate
-} // namespace AbsCoDes
+} // namespace abscodes

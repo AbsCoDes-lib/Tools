@@ -10,20 +10,20 @@
 //===-------------------------------------------------------------------------------------------------------------===//
 
 
-#ifndef AbscodesLibTemplate_INCLUDED
-#define AbscodesLibTemplate_INCLUDED
+#ifndef ABSCODES_LIB_PREPROCESSOR_INCLUDED
+#define ABSCODES_LIB_PREPROCESSOR_INCLUDED
 
 
 #include "AbscodesLibTemplate\AbscodesLibTemplateApi.h"
 
 
-namespace AbsCoDes {
+namespace abscodes {
 namespace AbscodesLibTemplate {
 
   ///
   /// Main class
   ///
-  class AbscodesLibTemplate_API AbscodesLibTemplate {
+  class ABSCODES_LIB_PREPROCESSOR_API AbscodesLibTemplate {
 
    public:
     /// Constructor.
@@ -33,7 +33,7 @@ namespace AbscodesLibTemplate {
   };
 
 } // namespace AbscodesLibTemplate
-} // namespace AbsCoDes
+} // namespace abscodes
 
 
-#endif // AbscodesLibTemplate_INCLUDED
+#endif // ABSCODES_LIB_PREPROCESSOR_INCLUDED

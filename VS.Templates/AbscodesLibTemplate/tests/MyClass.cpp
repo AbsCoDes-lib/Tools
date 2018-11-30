@@ -4,7 +4,7 @@
 #include "AbscodesLibTemplate\MyClass.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-using namespace AbsCoDes::AbscodesLibTemplate;
+using namespace abscodes::AbscodesLibTemplate;
 
 namespace AbscodesLibTemplateTests
 {		

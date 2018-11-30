@@ -1,4 +1,4 @@
-//===--- AbscodesLibTemplateApi.h ----------------------------------------------------------------------*- C++ -*-===//
+//===--- ABSCODES_LIB_PREPROCESSOR_API.h ---------------------------------------------------------------*- C++ -*-===//
 //
 // This source file is part of the Absolute Codes Design open source projects
 //
@@ -10,8 +10,8 @@
 //===-------------------------------------------------------------------------------------------------------------===//
 
 
-#ifndef AbscodesLibTemplateApi_INCLUDED
-#define AbscodesLibTemplateApi_INCLUDED
+#ifndef ABSCODES_LIB_PREPROCESSOR_API_INCLUDED
+#define ABSCODES_LIB_PREPROCESSOR_API_INCLUDED
 
 #if _MSC_VER > 1000
 #  pragma once
@@ -20,7 +20,7 @@
 
 //
 // By default this library is intended to be used as a DLL
-// To use it as a static library add ABSCODES_LIB_TEMPLATE_STATIC to your preprocessor list
+// To use it as a static library add ABSCODES_LIB_PREPROCESSOR_STATIC to your preprocessor list
 //
 
 
@@ -40,34 +40,34 @@
 
 
 //
-// Ensure that ABSCODES_LIB_TEMPLATE_DLL is default unless ABSCODES_LIB_TEMPLATE_STATIC is defined
+// Ensure that ABSCODES_LIB_PREPROCESSOR_DLL is default unless ABSCODES_LIB_PREPROCESSOR_STATIC is defined
 //
 #if defined(_WIN32) && defined(_DLL)
-#  if !defined(ABSCODES_LIB_TEMPLATE_DLL) && !defined(ABSCODES_LIB_TEMPLATE_STATIC)
-#    define ABSCODES_LIB_TEMPLATE_DLL
+#  if !defined(ABSCODES_LIB_PREPROCESSOR_DLL) && !defined(ABSCODES_LIB_PREPROCESSOR_STATIC)
+#    define ABSCODES_LIB_PREPROCESSOR_DLL
 #  endif
 #endif
 
 
 //
 // The following block is the standard way of creating macros which make exporting
-// from a DLL simpler. All files within this DLL are compiled with the ABSCODES_LIB_TEMPLATE_EXPORTS
+// from a DLL simpler. All files within this DLL are compiled with the ABSCODES_LIB_PREPROCESSOR_EXPORTS
 // symbol defined on the command line. this symbol should not be defined on any project
 // that uses this DLL. This way any other project whose source files include this file see
-// AbscodesLibTemplate_API functions as being imported from a DLL, wheras this DLL sees symbols
+// ABSCODES_LIB_PREPROCESSOR_API functions as being imported from a DLL, wheras this DLL sees symbols
 // defined with this macro as being exported.
 //
-#if defined(_WIN32) && defined(ABSCODES_LIB_TEMPLATE_DLL)
-#  ifdef ABSCODES_LIB_TEMPLATE_EXPORTS
-#    define AbscodesLibTemplate_API __declspec(dllexport)
+#if defined(_WIN32) && defined(ABSCODES_LIB_PREPROCESSOR_DLL)
+#  ifdef ABSCODES_LIB_PREPROCESSOR_EXPORTS
+#    define ABSCODES_LIB_PREPROCESSOR_API __declspec(dllexport)
 #  else
-#    define AbscodesLibTemplate_API __declspec(dllimport)
+#    define ABSCODES_LIB_PREPROCESSOR_API __declspec(dllimport)
 #  endif
 #endif
 
 
-#if !defined(AbscodesLibTemplate_API)
-#  define AbscodesLibTemplate_API
+#if !defined(ABSCODES_LIB_PREPROCESSOR_API)
+#  define ABSCODES_LIB_PREPROCESSOR_API
 #endif
 
 
@@ -81,29 +81,29 @@
 #    define X64_SUFFIX ""
 #  endif
 
-#  if defined(ABSCODES_LIB_TEMPLATE_DLL)
+#  if defined(ABSCODES_LIB_PREPROCESSOR_DLL)
 #    if defined(_DEBUG)
-#      define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX X64_SUFFIX "_d"
+#      define ABSCODES_LIB_PREPROCESSOR_LIB_SUFFIX X64_SUFFIX "_d"
 #    else
-#      define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX X64_SUFFIX ""
+#      define ABSCODES_LIB_PREPROCESSOR_LIB_SUFFIX X64_SUFFIX ""
 #    endif
 #  elif defined(_DLL)
 #    if defined(_DEBUG)
-#      define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX X64_SUFFIX "_mdd"
+#      define ABSCODES_LIB_PREPROCESSOR_LIB_SUFFIX X64_SUFFIX "_mdd"
 #    else
-#      define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX X64_SUFFIX "_md"
+#      define ABSCODES_LIB_PREPROCESSOR_LIB_SUFFIX X64_SUFFIX "_md"
 #    endif
 #  else
 #    if defined(_DEBUG)
-#      define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX X64_SUFFIX "_mtd"
+#      define ABSCODES_LIB_PREPROCESSOR_LIB_SUFFIX X64_SUFFIX "_mtd"
 #    else
-#      define ABSCODES_LIB_TEMPLATE_LIB_SUFFIX X64_SUFFIX "_mt"
+#      define ABSCODES_LIB_PREPROCESSOR_LIB_SUFFIX X64_SUFFIX "_mt"
 #    endif
 #  endif
 
-#  if !defined(ABSCODES_LIB_TEMPLATE_NO_AUTOLIB) && !defined(ABSCODES_LIB_TEMPLATE_EXPORTS)
-#    pragma comment(lib, "AbscodesLibTemplate" ABSCODES_LIB_TEMPLATE_LIB_SUFFIX ".lib")
-#    pragma message("Automatically linking with AbscodesLibTemplate" ABSCODES_LIB_TEMPLATE_LIB_SUFFIX ".lib")
+#  if !defined(ABSCODES_LIB_PREPROCESSOR_NO_AUTOLIB) && !defined(ABSCODES_LIB_PREPROCESSOR_EXPORTS)
+#    pragma comment(lib, "AbscodesLibTemplate" ABSCODES_LIB_PREPROCESSOR_LIB_SUFFIX ".lib")
+#    pragma message("Automatically linking with AbscodesLibTemplate" ABSCODES_LIB_PREPROCESSOR_LIB_SUFFIX ".lib")
 #  endif
 #endif
 
@@ -119,4 +119,4 @@
 // set the _WIN32_WINNT macro to the platform you wish to support before including SDKDDKVer.h.
 #include <SDKDDKVer.h>
 
-#endif // AbscodesLibTemplateApi_INCLUDED
+#endif // ABSCODES_LIB_PREPROCESSOR_API_INCLUDED
