@@ -42,13 +42,13 @@
   <ItemGroup>
     <None Include=".clang-format" />
     <None Include=".gitignore" />
-    <None Include="Readme.md" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\AbscodesLibTemplate\MyClass.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Licence.txt" />
+    <Text Include="LICENSE" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{450922A5-F364-495D-8FF7-B439FD701D05}</ProjectGuid>
