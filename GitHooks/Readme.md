@@ -7,5 +7,9 @@ Doxygen : Generate Doxygen documentation before each commit.
 
 
 ## Install the hook
-Copy all files to .git/hooks/ directory of your git project and make it executable.
+Copy all files to .git/hooks/ directory of your git project and makes it executable.  
+**Or**  
+Copy all files to .gitHooks, makes it executable  
+and run ```git config core.hooksPath .gitHooks```
+
 
