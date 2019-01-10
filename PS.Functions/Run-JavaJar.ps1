@@ -51,6 +51,7 @@ function Run-JavaJar {
         $ArgumentList += if($HttpsHost.Length) { '-Dhttps.proxyHost=' + $HttpsHost + ' '} else {''};
         $ArgumentList += if($HttpsPort.Length) { '-Dhttps.proxyPort=' + $HttpsPort + ' '} else {''};
         $ArgumentList += if($NonProxyHosts.Length) { '-Dhttp.nonProxyHosts="' + $NonProxyHosts + '" '} else {''};
+        $ArgumentList += if($NonProxyHosts.Length) { '-Dhttps.nonProxyHosts="' + $NonProxyHosts + '" '} else {''};
 
 
         if($NoNewWindow -eq $True) {
