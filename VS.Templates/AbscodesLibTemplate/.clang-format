@@ -74,16 +74,16 @@ ForEachMacros:
 IncludeBlocks: Preserve
 IncludeCategories:
   - Regex:           'stdafx.h|.*api.h'
-    Priority:        1
+    Priority:        -1
   - Regex:           '^<.*[^\.h]>'
     Priority:        2
   - Regex:           '^<.*\.h>'
     Priority:        3
-  - Regex:           '^<.*'
+  - Regex:           '^<.*>'
     Priority:        4
   - Regex:           '.*'
     Priority:        5
-IncludeIsMainRegex: '$'
+IncludeIsMainRegex: '(Test)?$'
 IndentCaseLabels: true
 IndentPPDirectives: AfterHash
 IndentWrappedFunctionNames: true
