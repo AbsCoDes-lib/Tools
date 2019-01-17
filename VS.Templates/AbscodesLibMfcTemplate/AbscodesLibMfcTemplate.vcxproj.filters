@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{e381661e-9c30-469e-acdc-a377b020955d}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{b20fe14c-c886-4020-88b7-27726c031a8f}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include\AbscodesLibMfcTemplate">
+      <UniqueIdentifier>{19c88969-5eab-4c55-bccb-364ca0f42d9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AbscodesLibMfcTemplate">
+      <UniqueIdentifier>{2189a2ca-6221-448c-bcda-ce3b3ace42b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AbscodesLibMfcTemplate\AbscodesLibMfcTemplateApi.h">
+      <Filter>include\AbscodesLibMfcTemplate</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AbscodesLibMfcTemplate\AbscodesLibMfcTemplate.h">
+      <Filter>include\AbscodesLibMfcTemplate</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AbscodesLibMfcTemplate\MyClass.h">
+      <Filter>include\AbscodesLibMfcTemplate</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdafx.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\targetver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include=".clang-format" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AbscodesLibMfcTemplate\MyClass.cpp">
+      <Filter>src\AbscodesLibMfcTemplate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stdafx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
