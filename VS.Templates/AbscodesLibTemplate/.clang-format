@@ -71,6 +71,8 @@ ForEachMacros:
   - foreach
   - Q_FOREACH
   - BOOST_FOREACH
+  - TEST_CLASS
+  - TEST_METHOD
 IncludeBlocks: Preserve
 IncludeCategories:
   - Regex:           'stdafx.h|.*api.h'

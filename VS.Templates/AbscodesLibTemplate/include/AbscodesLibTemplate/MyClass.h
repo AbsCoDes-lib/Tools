@@ -17,41 +17,41 @@
 namespace abscodes {
 namespace AbscodesLibTemplate {
 
-  ///
-  /// Put the class description here
-  ///
-  /// Use three / if you are using doxygen
-  ///
-  /// For more info on doxygen commands, see :
-  ///    http://doxygen.nl/docblocks.html
-  ///
-  class ABSCODES_LIB_PREPROCESSOR_API MyClass {
-
-   public:
-    /// Constructor.
-    MyClass();
-
-    /// Destructor.
-    ~MyClass();
-
-   public:
-    /// Always return true.
-    bool getTrue();
-
-    /// @brief	Always return false.
     ///
-    /// @see getBoolean()
+    /// Put the class description here
     ///
-    /// @return	false always
-    bool getFalse();
+    /// Use three / if you are using doxygen
+    ///
+    /// For more info on doxygen commands, see :
+    ///    http://doxygen.nl/docblocks.html
+    ///
+    class ABSCODES_LIB_PREPROCESSOR_API MyClass
+    {
+    public:
+        /// Constructor.
+        MyClass();
 
-    /// @brief	Return the boolean value.
-    ///
-    /// @param boolean The boolean value which will be returned
-    ///
-    /// @return	true or false depending on the parameter
-    bool getBoolean(bool boolean);
-  };
+        /// Destructor.
+        ~MyClass();
+
+    public:
+        /// Always return true.
+        bool getTrue();
+
+        /// @brief	Always return false.
+        ///
+        /// @see getBoolean()
+        ///
+        /// @return	false always
+        bool getFalse();
+
+        /// @brief	Return the boolean value.
+        ///
+        /// @param boolean The boolean value which will be returned
+        ///
+        /// @return	true or false depending on the parameter
+        bool getBoolean(bool boolean);
+    };
 
 } // namespace AbscodesLibTemplate
 } // namespace abscodes

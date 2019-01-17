@@ -20,17 +20,17 @@
 namespace abscodes {
 namespace AbscodesLibTemplate {
 
-  ///
-  /// Main class
-  ///
-  class ABSCODES_LIB_PREPROCESSOR_API AbscodesLibTemplate {
-
-   public:
-    /// Constructor.
-    AbscodesLibTemplate();
-    /// Destructor.
-    ~AbscodesLibTemplate();
-  };
+    ///
+    /// Main class
+    ///
+    class ABSCODES_LIB_PREPROCESSOR_API AbscodesLibTemplate
+    {
+    public:
+        /// Constructor.
+        AbscodesLibTemplate();
+        /// Destructor.
+        ~AbscodesLibTemplate();
+    };
 
 } // namespace AbscodesLibTemplate
 } // namespace abscodes

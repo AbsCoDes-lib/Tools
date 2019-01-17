@@ -6,25 +6,21 @@
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace abscodes::AbscodesLibTemplate;
 
-namespace AbscodesLibTemplateTests
-{		
-	TEST_CLASS(MyClass_Tests)
-	{
-	public:
+namespace AbscodesLibTemplateTests {
 
-		TEST_METHOD(getTrue)
-		{
-			MyClass myClass;
+TEST_CLASS(MyClass_Tests) {
 
-			Assert::IsTrue(myClass.getTrue());
-		}
+public:
+    TEST_METHOD(getTrue) {
+        MyClass myClass;
 
-		TEST_METHOD(getFalse)
-		{
-			MyClass myClass;
+        Assert::IsTrue(myClass.getTrue());
+    }
 
-			Assert::IsFalse(myClass.getFalse());
-		}
+    TEST_METHOD(getFalse) {
+        MyClass myClass;
 
-	};
-}
+        Assert::IsFalse(myClass.getFalse());
+    }
+};
+} // namespace AbscodesLibTemplateTests
